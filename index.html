@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pokédex</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Pokédex</h1>
+                <form action="">
+                    <input type="text" name="" id="search-input" />
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+                <select name="types" id="poke-types">
+                    <option value="" disabled selected hidden>Types</option>
+                    <option value="all">All</option>
+                    <option value="fire">Fire</option>
+                    <option value="grass">Grass</option>
+                    <option value="electric">Electric</option>
+                    <option value="water">Water</option>
+                    <option value="ground">Ground</option>
+                    <option value="rock">Rock</option>
+                    <option value="steel">Steel</option>
+                    <option value="fairy">Fairy</option>
+                    <option value="poison">Poison</option>
+                    <option value="bug">Bug</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="flying">Flying</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="normal">Normal</option>
+                    <option value="ice">Ice</option>
+                </select>
+            </div>
+
+            <!-- https://loading.io/css/     -->
+            <div class="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="poke-container"></div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
